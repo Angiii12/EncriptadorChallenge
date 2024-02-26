@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador - AluraChallenge</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="media/LogoIcon.png" type="image/x-icon">
+  <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/aux-dotbitc" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="encabezado">
+      <div class="logo-titulo">
+        <img id="logo" src="media/logo.png" alt="logo">
+        <h1 class="titulo">Encriptador</h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="rectangulo">
+    <div class="caja-texto">
+      <div class="escribir-texto">
+        <textarea id="inputText" class="texto-entrada" type="text" placeholder="Ingrese el texto aqui"></textarea>
+      </div>
+      <p class="advertencia-texto">Solo minusculas (no mayúsculas, símbolos ni numeros)</p>
+      <div class="botones">
+        <button onclick="encrypt()" class="btn" type="submit">Encriptar</button>
+        <button onclick="decrypt()" class="btn" type="submit">Desencriptar</button>
+        <button onclick="cleanWindow()" class="btn" type="submit">Borrar</button>
+      </div>
+      <p id="error"></p>
+    </div>
+    <div class="caja-mensaje">
+      <div class="mostrar-texto">
+        <p id="outputText"></p>
+      </div>
+      <button onclick="copyText()" class="btn_cpy" type="submit">Copiar</button>
+    </div>
+    <img class="ilustracion" src="media/ilustaracion.png" alt="Ilustración detective con lupa">
+  </div>
+
+  <footer></footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

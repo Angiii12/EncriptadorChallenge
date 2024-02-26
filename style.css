@@ -1,0 +1,193 @@
+body {
+  font-family: "Common Pixel", sans-serif;
+  background-image: url(media/background-resize.gif);
+  margin: 0;
+  padding: 0;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.titulo {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #dfdfdf;
+  text-shadow: 2px 2px 2px rgba(141, 4, 195, 0.932);
+  line-height: 100px;
+  margin-left: 20px;
+}
+
+.rectangulo {
+  width: 1200px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 24px;
+  border: 3px solid #1875E8;
+  background-image: url(media/ruido.png);
+  box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+  background-size: 100% 100%;
+}
+
+.caja-texto {
+  width: 750px;
+  height: 500px;
+  margin: 20px;
+  margin-top: 20px;
+  border: 1px solid #cccccc00;
+  background-color: #ffffff27;
+  border-radius: 24px;
+  box-shadow: 0 0 25px -8px #1876e8d4;
+}
+
+.escribir-texto {
+  width: 90%;
+  height: 50%;
+  padding: 25px;
+  border: none;
+  resize: none;
+  outline: 2px solid #1876e800;
+  display: flex;
+  border-radius: 22px;
+  overflow: hidden;
+  margin: auto;
+  justify-content: center;
+}
+
+.texto-entrada {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  text-align: center;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: "AuX DotBitC", sans-serif;
+  color: #000000;
+}
+
+.advertencia-texto,
+#error {
+  margin: 5px auto;
+  padding: 15px;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px rgba(141, 4, 195, 0.932);
+}
+
+.botones {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.botones .btn:first-child {
+  margin-left: 25px;
+}
+
+button,
+.btn_cpy {
+  height: 30%;
+  width: 30%;
+  margin-right: 25px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(#4a06b6, #4f13af, #5820b1, #5c2aad);
+  text-align: center;
+  font-family: "AuX DotBitC", sans-serif;
+  font-size: 14px;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow: 0 0 25px -8px #1876e8d4;
+}
+
+#error {
+  font-size: 20px;
+  text-shadow: 2px 2px 2px rgba(215, 19, 19, 0.932);
+}
+
+.caja-mensaje {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-between; 
+  width: 341px;
+  height: 500px;
+  padding: 25px;
+  margin: 20px;
+  margin-top: 20px;
+  border: 1px solid #cccccc00;
+  background-color: #ffffff27;
+  border-radius: 24px;
+  box-shadow: 0 0 25px -8px #1876e8d4;
+}
+
+.mostrar-texto {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.btn_cpy {
+  margin-top: 25px;
+  width: 100px;
+  height: auto;
+}
+
+#outputText {
+  font-family: "AuX DotBitC", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.ilustracion {
+  float: right; 
+  width: 200px;
+  height: auto; 
+  margin: 50px 10px 50px 10px;
+  margin-top: 50px;
+  margin-bottom: 50px; 
+}
+
+footer {
+  padding: 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .rectangulo {
+    width: 90%;
+  }
+
+  .caja-texto {
+    width: 100%;
+  }
+
+  .caja-mensaje {
+    width: 100%;
+  }
+
+  .ilustracion {
+    float: none; 
+    width: 100%;
+  }
+}
