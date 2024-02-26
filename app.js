@@ -42,7 +42,9 @@ function decrypt(){
 }
 
 function cleanWindow(){
-    document.getElementById('inputText').value = 'Ingrese texto aqui';
+    let inputField = document.getElementById('inputText');
+    inputField.value = null;
+    inputField.placeholder = 'Ingrese texto aqui';
     document.getElementById('error').textContent = ' ';
     document.getElementById('outputText').textContent = ' ';
     document.querySelector('.btn_cpy').textContent = ' Copiar';
